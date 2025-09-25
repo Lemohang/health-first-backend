@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'users',
     'appointments',
     'resources',
+    'telemedicine',
 ]
 
 # --------------------

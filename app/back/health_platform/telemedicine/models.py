@@ -1,5 +1,5 @@
 from django.db import models
-from users.models import User
+from django.utils import timezone
 from appointments.models import Appointment
 
 class VideoSession(models.Model):
@@ -12,7 +12,8 @@ class VideoSession(models.Model):
 
     def __str__(self):
         return f"VideoSession for {self.appointment.id}"
+
     def end_session(self):
-        self.ended_at = models.DateTimeField(auto_now=True)
+        """Mark the session as ended."""
+        self.ended_at = timezone.now()   # ✅ set to current time
         self.save()
-        
