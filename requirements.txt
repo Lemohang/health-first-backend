@@ -1,9 +1,9 @@
 
 gunicorn
-djangorestframework==3.14.0
-djangorestframework-simplejwt==6.7.0    
-psycopg2-binary==2.9.6
-django-cors-headers==4.3.0
-python-dotenv==1.0.0
-requests==2.31.0
+djangorestframework
+djangorestframework-simplejwt
+psycopg2-binary
+django-cors-headers
+python-dotenv
+request
 
