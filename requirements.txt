@@ -1,4 +1,4 @@
-Python Version: 3.11.8
+Python 
 gunicorn
 djangorestframework==3.14.0
 djangorestframework-simplejwt==6.7.0    
