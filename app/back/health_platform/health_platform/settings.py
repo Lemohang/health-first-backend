@@ -1,4 +1,6 @@
 from pathlib import Path
+import os
+
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -113,3 +115,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # CORS (for Next.js frontend)
 # --------------------
 CORS_ALLOW_ALL_ORIGINS = True  # for development, in production restrict to your frontend domain
+
+VIDEOSDK_API_KEY = os.getenv("VIDEOSDK_API_KEY", "your_api_key")
+VIDEOSDK_SECRET = os.getenv("VIDEOSDK_SECRET", "your_api_secret")

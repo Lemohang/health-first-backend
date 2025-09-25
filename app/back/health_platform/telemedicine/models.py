@@ -9,3 +9,10 @@ class VideoSession(models.Model):
     patient_token = models.TextField()
     started_at = models.DateTimeField(auto_now_add=True)
     ended_at = models.DateTimeField(null=True, blank=True)
+
+    def __str__(self):
+        return f"VideoSession for {self.appointment.id}"
+    def end_session(self):
+        self.ended_at = models.DateTimeField(auto_now=True)
+        self.save()
+        
