@@ -1,4 +1,4 @@
-Django==5.2.6
+Python Version: 3.11.8
 gunicorn
 djangorestframework==3.14.0
 djangorestframework-simplejwt==6.7.0    
